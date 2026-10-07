@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090A0C" />
+    <meta
+      name="description"
+      content="Kanade is a top-center Dynamic Island for niri. One quiet surface for media, notifications, controls, and the things that need your attention."
+    />
+    <meta property="og:title" content="Kanade - Your desktop, interrupted less." />
+    <meta
+      property="og:description"
+      content="One shape. Everything close. A dynamic desktop shell for niri."
+    />
+    <title>Kanade - Your desktop, interrupted less.</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#experience">Skip to interactive experience</a>
+    <header class="nav" id="nav">
+      <a class="logo" href="#overview" aria-label="Kanade home">Kanade<span>.</span></a>
+      <nav class="nav-links" id="nav-links" aria-label="Main navigation">
+        <a href="#overview">Overview</a><a href="#experience">Experience</a
+        ><a href="#modules">Modules</a><a href="#architecture">Architecture</a
+        ><a href="https://github.com/0x1d1e/kanade">GitHub <span aria-hidden="true">↗</span></a>
+      </nav>
+      <a class="nav-cta" href="https://github.com/0x1d1e/kanade#install"
+        >Get Kanade <span aria-hidden="true">↗</span></a
+      >
+      <button
+        class="menu-button"
+        aria-expanded="false"
+        aria-controls="nav-links"
+        aria-label="Open navigation"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <main>
+      <section class="hero" id="overview" aria-labelledby="hero-title">
+        <div class="hero-stage">
+          <div class="desktop" aria-hidden="true">
+            <div class="wallpaper"></div>
+            <div class="desktop-window window-files">
+              <div class="window-bar">
+                <span>Files</span><span>Home / Music</span><span>− &nbsp; □ &nbsp; ×</span>
+              </div>
+              <div class="file-layout">
+                <div class="file-sidebar">
+                  Home<br />Documents<br /><span>Music</span><br />Pictures
+                </div>
+                <div class="file-content">
+                  <div class="file-art"></div>
+                  <span>The quiet hours</span><small>Room to think.</small>
+                </div>
+              </div>
+            </div>
+            <div class="desktop-window window-notes">
+              <div class="window-bar"><span>Notes</span><span>− &nbsp; □ &nbsp; ×</span></div>
+              <div class="notes-content">
+                <small>A LITTLE SPACE</small>
+                <p>Less in the way.<br />More in the moment.</p>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+            <div class="desktop-privacy"><span class="status-dot"></span> Microphone in use</div>
+            <span class="workspace-label">01 <i></i> 02 <i></i> 03</span>
+          </div>
+          <div class="portal-panel panel-left" aria-hidden="true"></div>
+          <div class="portal-panel panel-right" aria-hidden="true"></div>
+          <div class="hero-topline">
+            <span><i class="status-dot"></i> A DYNAMIC SHELL FOR NIRI</span
+            ><span>WAYLAND NATIVE</span>
+          </div>
+          <h1 class="hero-wordmark" id="hero-title" aria-label="Kanade">
+            <span class="word-kana">KANA</span><span class="word-de">DE</span>
+          </h1>
+          <div class="hero-coordinate coordinate-left" aria-hidden="true">[ 01 / 05 ]</div>
+          <div class="hero-coordinate coordinate-right" aria-hidden="true">
+            PRESENTATION <span id="hero-state">REST</span>
+          </div>
+          <div class="hero-intro">
+            <p>One shape.<br />Everything close.</p>
+            <span>What matters, when it matters.<br />A quieter surface for your desktop.</span>
+          </div>
+          <a class="scroll-cue" href="#experience"
+            ><span class="scroll-line" aria-hidden="true"></span>SCROLL TO EXPERIENCE
+            <span aria-hidden="true">↓</span></a
+          >
+          <div class="hero-bottom-meta" aria-hidden="true">
+            <span>LESS SHELL. MORE SPACE.</span
+            ><span><span data-local-time>--:--</span> &nbsp; / &nbsp; FOCUSED</span>
+          </div>
+          <div class="hero-track" aria-hidden="true">
+            <span>Rest</span><span>Compact</span><span>Peek</span><span>Expanded</span
+            ><span>Split</span><i></i>
+          </div>
+          <div class="static-island hero-static" aria-hidden="true">
+            <img src="/artwork.svg" alt="" /> Weightless <span>♪</span><i></i><span>24:59</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="philosophy section-pad" aria-labelledby="philosophy-title">
+        <div class="section-eyebrow">
+          <span class="index">01 /</span> A SHELL THAT STAYS OUT OF THE WAY
+        </div>
+        <h2 id="philosophy-title">
+          The desktop should<br />surface <em>what matters,</em><br />then disappear<br />when it
+          doesn't.
+        </h2>
+        <div class="philosophy-bottom">
+          <span class="outline-index" aria-hidden="true">01</span>
+          <p>
+            Transient moments. One coherent surface.<br />Kanade keeps them close, and leaves
+            window<br class="desktop-break" />
+            management to niri. Not another desktop environment.
+          </p>
+        </div>
+        <img
+          class="philosophy-mark"
+          src="/kanade-mark.png"
+          width="1280"
+          height="1280"
+          alt=""
+          loading="lazy"
+        />
+      </section>
+
+      <section class="experience section-pad" id="experience" aria-labelledby="experience-title">
+        <div class="section-eyebrow"><span class="index">02 /</span> ONE SHAPE. MANY STATES.</div>
+        <div class="section-heading">
+          <h2 id="experience-title">Meet your<br />new centre.</h2>
+          <p>No windows to chase.<br />Just a little room for what’s happening.</p>
+        </div>
+        <div class="experience-layout">
+          <div class="scenario-selector" role="group" aria-label="Choose a demonstration">
+            <button data-scenario="media" aria-pressed="true">
+              <span>01</span>Media<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <button data-scenario="timer" aria-pressed="false">
+              <span>02</span>Timer<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <button data-scenario="notifications" aria-pressed="false">
+              <span>03</span>Notifications<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <button data-scenario="controls" aria-pressed="false">
+              <span>04</span>Controls<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <button data-scenario="launcher" aria-pressed="false">
+              <span>05</span>Launcher<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <button data-scenario="privacy" aria-pressed="false">
+              <span>06</span>Privacy<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <button data-scenario="wifi" aria-pressed="false">
+              <span>07</span>Wi-Fi<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+            <button data-scenario="bluetooth" aria-pressed="false">
+              <span>08</span>Bluetooth<svg aria-hidden="true" viewBox="0 0 20 20">
+                <path d="M4 10h12m-5-5 5 5-5 5" />
+              </svg>
+            </button>
+          </div>
+          <div class="demo-desktop" id="demo-anchor">
+            <div class="demo-grid" aria-hidden="true"></div>
+            <span class="demo-corner corner-tl" aria-hidden="true">+</span
+            ><span class="demo-corner corner-tr" aria-hidden="true">+</span
+            ><span class="demo-corner corner-bl" aria-hidden="true">+</span
+            ><span class="demo-corner corner-br" aria-hidden="true">+</span>
+            <span class="demo-metadata">KANADE / INTERACTIVE STUDY</span>
+            <div class="island" id="island" aria-label="Kanade interactive demonstration">
+              <div class="island-content" id="island-content">
+                <div class="surface-label">MEDIA <span>MPRIS</span></div>
+                <div class="media-body">
+                  <img class="album-art" src="/artwork.svg" alt="Abstract dune album artwork" />
+                  <div>
+                    <h3>Weightless</h3>
+                    <p>The quiet hours</p>
+                    <small>A little room to think.</small>
+                  </div>
+                </div>
+                <label class="sr-only" for="media-progress">Playback position</label
+                ><input
+                  id="media-progress"
+                  type="range"
+                  min="0"
+                  max="222"
+                  value="83"
+                  data-range="progress"
+                />
+                <div class="time-labels"><span id="elapsed">1:23</span><span>3:42</span></div>
+                <div class="media-controls">
+                  <button data-action="previous" aria-label="Previous track">‹</button
+                  ><button class="play-button" data-action="play" aria-label="Pause playback">
+                    Ⅱ</button
+                  ><button data-action="next" aria-label="Next track">›</button>
+                </div>
+                <div class="surface-footer">
+                  <span class="status-dot"></span> Desktop speakers <span>Sample media</span>
+                </div>
+              </div>
+            </div>
+            <div class="privacy-overlay" id="privacy-overlay" hidden>
+              <i class="status-dot"></i> Microphone · Demo call
+            </div>
+            <div class="demo-caption">
+              <span id="scenario-presentation">EXPANDED / MEDIA</span
+              ><span>TRY THE CONTROLS <span aria-hidden="true">↗</span></span>
+            </div>
+          </div>
+        </div>
+        <div class="demo-note">
+          <p id="scenario-description">
+            Artwork, playback, and a timeline. Your music, a little closer.
+          </p>
+          <span>Live interface demo. Sample data, not your system.</span>
+        </div>
+        <p class="sr-only" id="demo-status" role="status" aria-live="polite"></p>
+        <p class="no-script-note">
+          JavaScript is off. This is a static preview; explore the
+          <a href="https://github.com/0x1d1e/kanade#what-it-is">real shell’s features</a> in the
+          documentation.
+        </p>
+      </section>
+
+      <section class="capabilities section-pad" id="modules" aria-labelledby="capabilities-title">
+        <div class="capabilities-intro">
+          <div class="section-eyebrow"><span class="index">03 /</span> FOCUSED BY DESIGN</div>
+          <h2 id="capabilities-title">Small surface.<br />Large system.</h2>
+          <p>The everyday things, brought together.<br />Without taking over your desktop.</p>
+          <div class="text-links">
+            <a href="#architecture">Explore architecture <span aria-hidden="true">↗</span></a
+            ><a href="https://github.com/0x1d1e/kanade"
+              >View source <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+        <div class="capability-list">
+          <article>
+            <span class="capability-number">01</span>
+            <div>
+              <h3>Media</h3>
+              <p>MPRIS playback, artwork, timeline, and controls.</p>
+            </div>
+            <span class="capability-glyph wave-glyph" aria-hidden="true"
+              ><i></i><i></i><i></i><i></i><i></i
+            ></span>
+          </article>
+          <article>
+            <span class="capability-number">02</span>
+            <div>
+              <h3>Notifications</h3>
+              <p>Banners, history, actions, and Do Not Disturb.</p>
+            </div>
+            <span class="capability-glyph" aria-hidden="true">◷</span>
+          </article>
+          <article>
+            <span class="capability-number">03</span>
+            <div>
+              <h3>Controls</h3>
+              <p>Audio, brightness, Wi-Fi, Bluetooth, microphone, and power.</p>
+            </div>
+            <span class="capability-glyph" aria-hidden="true">☷</span>
+          </article>
+          <article>
+            <span class="capability-number">04</span>
+            <div>
+              <h3>Launcher</h3>
+              <p>Applications, calculations, and emoji. Keyboard first.</p>
+            </div>
+            <kbd aria-hidden="true">⌘ ↵</kbd>
+          </article>
+          <article>
+            <span class="capability-number">05</span>
+            <div>
+              <h3>Privacy</h3>
+              <p>A separate cluster for PipeWire microphone, camera, and niri screen capture.</p>
+            </div>
+            <span class="capability-glyph privacy-glyph" aria-hidden="true">●</span>
+          </article>
+          <article>
+            <span class="capability-number">06</span>
+            <div>
+              <h3>Timer</h3>
+              <p>Persistent timers that share the Island with your other activities.</p>
+            </div>
+            <span class="capability-glyph timer-glyph" aria-hidden="true">25:00</span>
+          </article>
+          <article>
+            <span class="capability-number">07</span>
+            <div>
+              <h3>OSD</h3>
+              <p>Volume, brightness, and microphone feedback. Outside the Island.</p>
+            </div>
+            <span class="capability-glyph osd-glyph" aria-hidden="true"><i></i></span>
+          </article>
+          <article>
+            <span class="capability-number">08</span>
+            <div>
+              <h3>Tray & clipboard</h3>
+              <p>App tray menus and an in-memory history of text and images.</p>
+            </div>
+            <span class="capability-glyph" aria-hidden="true">▤</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="split-section" aria-labelledby="split-title">
+        <div class="split-stage">
+          <div class="section-eyebrow"><span class="index">04 /</span> ROOM FOR TWO</div>
+          <h2 id="split-title">Together.<br />Not in the way.</h2>
+          <div class="split-anchor" id="split-anchor">
+            <span class="split-annotation primary-annotation" aria-hidden="true">PRIMARY</span
+            ><span class="split-annotation satellite-annotation" aria-hidden="true">SATELLITE</span>
+            <div class="static-island split-static" aria-hidden="true">
+              <img src="/artwork.svg" alt="" /> Weightless <span>♪</span><i></i><span>24:59</span>
+            </div>
+          </div>
+          <div class="split-copy">
+            <p>Music keeps playing. A timer finds its place.</p>
+            <span>One body. Two segments. Neither forgotten.</span>
+          </div>
+          <span class="split-progress-label" aria-hidden="true">COMPACT <i></i> SPLIT</span>
+        </div>
+      </section>
+
+      <section
+        class="architecture section-pad"
+        id="architecture"
+        aria-labelledby="architecture-title"
+      >
+        <div class="section-eyebrow"><span class="index">05 /</span> BUILT FOR THE DESKTOP</div>
+        <div class="section-heading">
+          <h2 id="architecture-title">Native, down<br />to the details.</h2>
+          <p>A Rust shell, built with Amane.<br />Connected to the systems already there.</p>
+        </div>
+        <div class="integration-list">
+          <div>
+            <span>NIRI</span>
+            <p>Focused outputs, workspace changes, and screen capture.</p>
+            <span>COMPOSITOR</span>
+          </div>
+          <div>
+            <span>PIPEWIRE</span>
+            <p>Microphone and camera awareness through the media graph.</p>
+            <span>PRIVACY</span>
+          </div>
+          <div>
+            <span>NETWORKMANAGER</span>
+            <p>Wi-Fi state and connection flows.</p>
+            <span>NETWORK</span>
+          </div>
+          <div>
+            <span>BLUEZ</span>
+            <p>Bluetooth discovery and device actions.</p>
+            <span>DEVICES</span>
+          </div>
+          <div>
+            <span>MPRIS</span>
+            <p>Media state, artwork, and playback control.</p>
+            <span>MEDIA</span>
+          </div>
+          <div>
+            <span>WAYLAND / D-BUS</span>
+            <p>Native shell surfaces. System and application communication.</p>
+            <span>FOUNDATION</span>
+          </div>
+        </div>
+        <div class="architecture-statement">
+          <h3>Event driven when possible.<br /><em>Quiet when idle.</em></h3>
+          <div>
+            <p>
+              Modular services. Explicit tool adapters.<br />Hot-reloadable configuration.<br />Predictable
+              presentation transitions.
+            </p>
+            <p class="architecture-caveat">
+              niri only. Some event sources need optional tools.<br />See
+              <a href="https://github.com/0x1d1e/kanade#limitations"
+                >requirements and limitations ↗</a
+              >.
+            </p>
+          </div>
+        </div>
+        <div
+          class="schematic"
+          aria-label="System events flow through services and presentation to Kanade"
+        >
+          <span>System events</span><i aria-hidden="true">→</i><span>Services</span
+          ><i aria-hidden="true">→</i><span>Presentation</span><i aria-hidden="true">→</i
+          ><span>Kanade<span class="accent">.</span></span>
+        </div>
+        <div class="milestones">
+          <div class="milestone-heading">
+            <h3>PROJECT HORIZON</h3>
+            <a href="https://github.com/0x1d1e/kanade/milestones"
+              >Live milestones <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Milestone</th>
+                  <th scope="col">Focus</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://github.com/0x1d1e/kanade/milestone/3">v0.3 ↗</a></td>
+                  <td>Split, detailed Controls, tray, clipboard, and launcher providers</td>
+                  <td><span class="status-dot"></span> In progress</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/0x1d1e/kanade/milestone/6">v0.6 ↗</a></td>
+                  <td>Theme, accessibility, motion, performance, and blur</td>
+                  <td>Planned</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="milestone-note">
+            Project milestones, not release claims. Status checked against the repository on 7
+            October 2026.
+          </p>
+        </div>
+      </section>
+
+      <section class="opensource section-pad" aria-labelledby="opensource-title">
+        <div class="section-eyebrow"><span class="index">06 /</span> OPEN SOURCE. OPEN ENDED.</div>
+        <div class="opensource-layout">
+          <h2 id="opensource-title">
+            Take the shell.<br />Take the pieces.<br /><em>Make it yours.</em>
+          </h2>
+          <div>
+            <p>
+              A complete shell, with a structure you can read.<br />Explore the modules. Follow the
+              decisions.<br />Start with what you need.
+            </p>
+            <div class="source-buttons">
+              <a class="button button-primary" href="https://github.com/0x1d1e/kanade"
+                >View on GitHub <span aria-hidden="true">↗</span></a
+              ><a class="button" href="https://github.com/0x1d1e/kanade#readme"
+                >Documentation <span aria-hidden="true">↗</span></a
+              >
+            </div>
+            <div class="clone-command">
+              <code>git clone https://github.com/0x1d1e/kanade</code
+              ><button data-action="copy" aria-label="Copy clone command">
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <rect x="7" y="7" width="9" height="10" rx="2" />
+                  <path d="M11 7V3H3v10h4" />
+                </svg>
+              </button>
+            </div>
+            <span class="source-license">MIT LICENSE &nbsp; / &nbsp; BUILT IN RUST</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="closing-line">
+        <h2>Your desktop, interrupted less.</h2>
+        <div>
+          <a href="https://github.com/0x1d1e/kanade">View GitHub ↗</a
+          ><a href="https://github.com/0x1d1e/kanade#readme">Read the docs ↗</a>
+        </div>
+      </div>
+      <div class="footer-strip">
+        <a class="logo" href="#overview">Kanade<span>.</span></a
+        ><span>A LITTLE LESS IN THE WAY.</span>
+        <nav aria-label="Footer">
+          <a href="https://github.com/0x1d1e/kanade">GitHub</a
+          ><a href="https://github.com/0x1d1e/kanade/blob/main/LICENSE">License</a
+          ><a href="https://github.com/0x1d1e/kanade#readme">Docs</a
+          ><a href="#overview" aria-label="Back to top">↑</a>
+        </nav>
+      </div>
+      <div class="footer-wordmark-wrap">
+        <div id="footer-anchor"></div>
+        <p class="footer-wordmark" aria-hidden="true">KANADE</p>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
